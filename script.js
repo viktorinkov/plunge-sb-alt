@@ -38,6 +38,8 @@ setTimeout(()=> splash.classList.add("zoom"), START_DELAY);
 /* 2️⃣ After zoom + small buffer, fade splash out & show video */
 setTimeout(()=>{
   video.classList.add("visible");
+  video.currentTime = 5;
+  video.loop = true;
   video.play();
 
   /* 3️⃣ Countdown appears over video */
